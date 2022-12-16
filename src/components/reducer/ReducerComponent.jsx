@@ -20,7 +20,7 @@ const ButtonStyled = styled.button`
 const ReducerComponent = () => {
   const initialState = "grey";
 
-  const {title, colorRed, colorGreen, colorBlue} = useContext(Contexto)
+  const { title, colorRed, colorGreen, colorBlue } = useContext(Contexto);
 
   const reducer = (state, action) => {
     switch (action.type) {
