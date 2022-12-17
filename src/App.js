@@ -1,21 +1,22 @@
 import React from "react";
-import ComponentExampleContexto from "./components/ComponentsExamples/ComponentExampleContexto";
+import GlobalStyles from "./globalStyles/GlobalStyles";
 import ContadorComplejoComponent from "./components/contadorComplejo/ContadorComplejoComponent";
 import SmallContainer from "./components/contadorComplejo/SmallContainer";
+import HooksApiPeticion from "./components/peticionesApiHooks/HooksApiPeticion";
 import GeneralContainer from "./components/reducer/GeneralContainer";
+import ComponentExampleContexto from "./components/ComponentsExamples/ComponentExampleContexto";
 import ReducerComponent from "./components/reducer/ReducerComponent";
 import Contador from "./components/stateExample/Contador";
-import GlobalStyles from "./globalStyles/GlobalStyles";
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      <ComponentExampleContexto>
+      {/*       <ComponentExampleContexto>
         <GeneralContainer>
           <ReducerComponent />
         </GeneralContainer>
-      </ComponentExampleContexto>
+      </ComponentExampleContexto> */}
       {/*       <GeneralContainer>
         <SmallContainer>
           <Contador />
@@ -24,6 +25,13 @@ function App() {
       <GeneralContainer>
         <SmallContainer>
           <ContadorComplejoComponent />
+        </SmallContainer>
+      </GeneralContainer>
+
+      <GeneralContainer>
+        {/* El SmallContainer es un componente que tiene la propiedad children que le ordena los componentes hijos con un display flex y un gap de 10px */}
+        <SmallContainer>
+          <HooksApiPeticion />
         </SmallContainer>
       </GeneralContainer>
     </>
