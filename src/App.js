@@ -7,32 +7,14 @@ import GeneralContainer from "./components/reducer/GeneralContainer";
 import ComponentExampleContexto from "./components/ComponentsExamples/ComponentExampleContexto";
 import ReducerComponent from "./components/reducer/ReducerComponent";
 import Contador from "./components/stateExample/Contador";
+import ClickTraker from "./components/ComponentsExamples/ClickTraker";
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      {/*       <ComponentExampleContexto>
-        <GeneralContainer>
-          <ReducerComponent />
-        </GeneralContainer>
-      </ComponentExampleContexto> */}
-      {/*       <GeneralContainer>
-        <SmallContainer>
-          <Contador />
-        </SmallContainer>
-      </GeneralContainer> */}
       <GeneralContainer>
-        <SmallContainer>
-          <ContadorComplejoComponent />
-        </SmallContainer>
-      </GeneralContainer>
-
-      <GeneralContainer>
-        {/* El SmallContainer es un componente que tiene la propiedad children que le ordena los componentes hijos con un display flex y un gap de 10px */}
-        <SmallContainer>
-          <HooksApiPeticion />
-        </SmallContainer>
+        <ClickTraker />
       </GeneralContainer>
     </>
   );

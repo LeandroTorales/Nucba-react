@@ -1,0 +1,8 @@
+.renderizador {
+  background-color: rgb(112, 63, 3);
+}
+.active {
+  display: block;
+  background-color: aqua;
+  text-transform: uppercase;
+}
